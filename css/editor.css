@@ -1,0 +1,209 @@
+quak[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+    cursor: move;
+}
+
+html,
+body {
+    height: 99%;
+}
+
+#cache{
+position: absolute;
+bottom: 5px;
+}
+
+#cacheparent{
+  position: relative;
+  z-index: -5;
+  min-height: 10px;
+  min-width: 10px;
+}
+
+#fichier_a_uploader{
+  z-index: 2;
+  opacity:0;
+}
+
+#ConteneurPrimaire{
+  height: 100%;
+  width:1600px;
+  flex-flow: column;
+}
+
+#menu{
+  height: 83px;
+
+}
+
+#premierConteneur{
+  flex-grow : 1;
+}
+
+#pages
+{
+  max-height: 519px;
+}
+#Importer
+{
+  max-width: 85px;
+  max-height: 30px;
+}
+#images
+{
+  max-height: 476px;
+}
+
+
+
+#pages img,
+#premièreImage,
+#deuxièmeImage {
+  height:140px;
+  width:120px;
+  background-color: lightgrey;
+}
+
+
+
+#listePages,
+#listeimages{
+  width: 320px;
+}
+
+#pageAffichée{
+  width: 1000px;
+}
+
+
+#pages > *:hover{
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+/*partie milieu*/
+
+#pageD,
+#pageG {
+  width: 460px;
+  background-color: lightgrey;
+  border-color: black;
+  height: 560px;
+}
+
+
+
+
+/* GESTION DE LA POPUP */
+
+/* Popup container */
+.popupContainer {
+  position: sticky;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+/* The actual popup */
+.popup {
+  width: 400px;
+  height: 270px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px ;
+  position: absolute;
+  bottom: 125%;
+  left: -285%;
+  margin-left: -135px;
+}
+
+/* Popup arrow */
+.popupContainer .popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 92%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#posttext{
+  resize: none;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  width:200px;
+  height: 50px;
+  float: right;
+}
+
+.popupContainer p{
+  height: 9px;
+}
+
+#messages-area{
+    height: 200px;
+    width: 385px;
+    background-color: white;
+}
+
+/* FIN DE GESTION DE LA POPUP*/
+
+/* GESTION DE LA LISTE DES COLLABOS */
+
+/* Popup container */
+.listContainer, .shareContainer {
+  position: sticky;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* The actual popup */
+.showList, .showshare {
+
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px ;
+  position: absolute;
+}
+.showshare{
+  width: 400px;
+}
+
+.nameList {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Popup arrow */
+.listContainer .showList::after, .shareContainer .showshare::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 8%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color:  transparent transparent #555 transparent;
+}
+
+/* FIN DE GESTION DE LA LISTE DES COLLABOS*/
+
+/* GESTION DU PARTAGE */
+
+/* FIN DE GESTION DU PARTAGE*/
+#lock,
+#unlock{
+  align-self: flex-end;
+}

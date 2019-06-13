@@ -1,0 +1,45 @@
+html,
+body {
+    height: 99%;
+}
+
+#partieGauche,
+#partieDroite{
+  width:48%;
+}
+
+#createAlbum{
+  height:50px;
+}
+
+#ConteneurPrimaire{
+  height: 100%;
+  width:99%;
+  flex-flow: column;
+}
+
+#ConteneurSecondaire{
+  flex-grow : 1;
+}
+
+#MesAlbums,
+#AlbumsPartages,
+#InvitationsRecues,
+#InvitationsAAccepter,
+#InvitationsEnCours{
+  flex-grow : 1;
+  min-height: 50px;
+}
+
+#panneauMesAlbums,
+#panneauAlbumsPartages{
+  flex-flow: column;
+  max-height: 50%;
+}
+
+#panneauInvitationsRecues,
+#panneauInvitationsEnCours,
+#panneauInvitationsAAccepter{
+  flex-flow: column;
+  max-height: 33%%;
+}

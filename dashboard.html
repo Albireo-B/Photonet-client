@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+       <title>Tableau de bord</title>
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css'>
+       <link rel="stylesheet" href="css/dashboard.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- Notre fichier Javascript -->
+        <script type="module" src="js/dashboard.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   </meta>
+</head>
+
+<body>
+  <div class="m-2 d-flex" id="ConteneurPrimaire">
+    <div class="ml-2 d-flex justify-content-center">
+      <img src="images/logo-photoweb-responsive.png" class="mr-5" alt="logo"  width="75" height="40"/>
+      <div id="menu" class="d-flex">
+         <input type="button" class="btn btn-secondary mx-2 ml-5" value="Editer Profil" disabled/>
+         <input type="button" id="disconnect" class="btn btn-primary mx-2" value="Déconnexion" />
+      </div>
+    </div>
+      <div id="ConteneurSecondaire" class="d-flex mt-3">
+        <div id="partieGauche" class="border m-2 border-dark" float="left">
+
+          <div id="panneauMesAlbums" class="d-flex overflow-auto m-2">
+            <p class="text-center"> <strong>Mes Albums</strong> </p>
+            <form id="createAlbum" class="d-flex" enctype="multipart/form-data"  method="post">
+              <label for="text" class="m-2" title="Nom du nouvel album :">Nom :</label>
+              <input type="text" id="text">
+              <input type="submit" name="submit" value="Créer un nouvel album" class="btn btn-primary mx-2" />
+            </form>
+            <div id="MesAlbums" class="border border-dark overflow-auto m-2">
+            </div>
+          </div>
+
+
+
+
+          <div id="panneauAlbumsPartages" class="d-flex overflow-auto m-2">
+          <p class="text-center"> <strong>Vous avez aussi accès à ces albums</strong> </p>
+          <div id="AlbumsPartages" class="border border-dark overflow-auto m-2">
+          </div>
+          </div>
+
+        </div>
+
+        <div id="partieDroite" class="m-2 border border-dark"  float="left">
+
+          <div id="panneauInvitationsRecues" class="d-flex overflow-auto m-2">
+            <p class="text-center"> <strong>Ces gens vous ont invité à éditer leur album</strong> </p>
+            <div id="InvitationsRecues" class="border border-dark overflow-auto m-2">
+            </div>
+          </div>
+
+          <div id="panneauInvitationsAAccepter" class="d-flex overflow-auto m-2">
+            <p class="text-center"> <strong>Ces gens vous demandent d'inviter leur ami à éditer votre album</strong> </p>
+            <div id="InvitationsAAccepter" class="border border-dark overflow-auto m-2">
+            </div>
+          </div>
+
+          <div id="panneauInvitationsEnCours" class="d-flex overflow-auto m-2">
+            <p class="text-center"> <strong>Ces gens n'ont pas encore répondu à votre invitation ou à votre demande d'invitation</strong> </p>
+            <div id="InvitationsEnCours" class="border border-dark overflow-auto m-2">
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

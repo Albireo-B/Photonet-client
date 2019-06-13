@@ -1,0 +1,65 @@
+body
+{
+ background-color:#BDBDBD;
+}
+
+#CGU{
+  margin-top: .5rem;
+}
+
+#CGUt{
+  color:#E6E6E6;
+}
+
+#loginform
+{
+ flex-flow: column;
+ background-color:#585858;
+ border-radius:3px;
+ box-shadow:0px 0px 10px 0px #424242;
+ box-sizing:border-box;
+ font-family:helvetica;
+ visibility:hidden;
+ display:none;
+}
+#loginform #close_login
+{
+ top:90px;
+ left:980px;
+ width:15px;
+ height:15px;
+}
+
+#loginform #login
+{
+ width:250px;
+ height:40px;
+ border-radius:3px;
+}
+#loginform #password
+{
+ width:250px;
+ height:40px;
+ border-radius:3px;
+}
+#loginform #dologin
+{
+ width:250px;
+ height:40px;
+ border:none;
+ border-radius:3px;
+ color:#E6E6E6;
+ background-color:grey;
+ font-size:20px;
+}
+
+#loginform #doregister,#registerform #doregister
+{
+ width:250px;
+ height:40px;
+ border:none;
+ border-radius:3px;
+ color:#E6E6E6;
+ background-color:grey;
+ font-size:20px;
+}
